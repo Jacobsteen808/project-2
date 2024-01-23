@@ -187,7 +187,7 @@ The Trading Risk Profiler is tailored for both beginners and experienced traders
   - Bollinger Bands & RSI Algorithms
 
 ## Presentation
-- **Contributors:** All members of the group will participate in the presentation.
+- **Contributors:** All members of the group participated in the making of the presentation.
 
 
 Your feedback and contributions to this project are welcome and appreciated!
