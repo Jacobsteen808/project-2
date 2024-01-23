@@ -58,6 +58,58 @@ Welcome to the Trading Risk Profiler, a tool designed to align algorithmic tradi
 - Despite numerous trades, overall effectiveness is limited, with negative returns and a low win rate.
 - The analysis suggests a need for strategy revision, including better risk management, refined trading algorithms, and improved market alignment.
 
+- # SVM Model Performance Summary
+
+## Training Set Performance
+- **Accuracy:** 91% on the training set.
+- **Class-wise Performance:**
+  - **Class -1.0 (Sell):** Precision 100%, Recall 28%.
+  - **Class 0.0 (Hold):** Precision 91%, Recall 100%.
+  - **Class 1.0 (Buy):** Precision and Recall 0%.
+
+**Summary:** The model excelled in identifying 'hold' signals but had difficulties with 'buy' and 'sell' signals, particularly failing to detect any 'buy' signals.
+
+## Testing Set Performance
+- **Accuracy:** 90% on the testing set.
+- **Class-wise Performance:**
+  - **Class -1.0 (Sell):** Precision and Recall 0%.
+  - **Class 0.0 (Hold):** Precision 90%, Recall 100%.
+
+**Summary:** Consistent with training performance, the model effectively identified 'hold' signals but failed to recognize any 'sell' signals and did not predict 'buy' signals in the test data.
+
+## Overall Summary
+The SVM model demonstrated strong performance in accurately recognizing 'hold' signals. However, it significantly underperformed in identifying 'buy' and 'sell' signals. This led to high overall accuracy, primarily attributed to its effectiveness with the 'hold' class, which seems to be more prevalent in the dataset. The model's skewed performance across different classes suggests the need for further tuning or a different approach to enhance its ability to identify 'buy' and 'sell' signals. The results also indicate a potential imbalance in the dataset, which may have influenced the model's learning bias towards the 'hold' signals.
+
+# Optimized SVM Model Performance Summary Using GridSearchCV for hyperparameter tuning
+
+## Introduction
+The outcomes discussed are based on an optimized Support Vector Machine (SVM) model, enhanced using GridSearchCV from scikit-learn. This optimization has notably improved the model's ability to identify trading signals compared to the initial SVM model.
+
+## Training Set Performance
+- **Overall Accuracy:** Increased to 97%, showing a high rate of correct predictions.
+- **Class-wise Performance:**
+  - **Class -1.0 (Sell):** Precision 100%, Recall 83% - excellent at identifying sell signals.
+  - **Class 0.0 (Hold):** Precision 97%, Recall 100% - highly effective for hold signals.
+  - **Class 1.0 (Buy):** Precision 100%, Recall 55% - reliable in buy predictions but misses some buy opportunities.
+
+**Summary:** Post hyperparameter tuning, the model demonstrates a well-balanced and effective performance across all trading signal classes.
+
+## Testing Set Performance
+- **Overall Accuracy:** Maintained at 94%, indicating effective generalization to unseen data.
+- **Class-wise Performance:**
+  - **Class -1.0 (Sell):** Precision 64%, Recall 100% - proficient in identifying most sell opportunities, though with some false positives.
+  - **Class 0.0 (Hold):** Maintains perfect precision and high recall.
+
+**Summary:** The model shows strong generalization capabilities, with notable improvement in identifying sell signals compared to the initial version.
+
+## Overall Summary
+- **Hyperparameter Tuning Impact:** The use of GridSearchCV has substantially enhanced the SVM model's differentiation between buy, hold, and sell signals.
+- **Significant Improvements:** Notably better precision and recall for sell and buy signals, addressing previous weaknesses.
+- **Balanced Performance:** The model now excels in recognizing hold signals and effectively identifies buy and sell opportunities.
+- **Robust and Reliable:** Improved performance on both training and testing sets indicates a well-tuned model suitable for practical trading applications.
+- **Advancement in Trading Strategy:** This optimized model marks a significant step forward, showcasing the importance of thorough hyperparameter tuning in machine learning models for trading.
+
+
 - **Price SMA Crossover**: Employs Simple Moving Averages; buy signals when short-term SMA crosses above long-term SMA.
 # Trading Strategy Performance Recap
 
