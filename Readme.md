@@ -122,6 +122,7 @@ The Trading Risk Profiler is tailored for both beginners and experienced traders
 
 ---
 
+
 Your feedback and contributions to this project are welcome and appreciated!
 
 
