@@ -172,6 +172,37 @@ The outcomes discussed are based on an optimized Support Vector Machine (SVM) mo
 ## Conclusion
 The Trading Risk Profiler is tailored for both beginners and experienced traders, aiming to make algorithmic trading more accessible by aligning strategies with individual risk profiles.
 
+# Libraries and Tools Used in the Project
+
+## Data Handling and Analysis
+- **yfinance (`yf`):** Used for fetching historical financial data.
+- **Pandas (`pd`):** Essential for data manipulation and analysis.
+- **NumPy (`np`):** Fundamental package for scientific computing with Python.
+
+## Visualization
+- **hvplot.pandas:** Interactive plotting for Pandas objects using HoloViews.
+- **HoloViews (`hv`):** For building complex visualizations easily.
+- **Matplotlib (`plt`):** A comprehensive library for creating static, animated, and interactive visualizations.
+- **mplfinance (`mpf`):** Specialized for financial data visualization.
+
+## Algorithmic Trading and Backtesting
+- **Backtesting:** For testing trading strategies on historical data.
+- **TA (Technical Analysis Library):** Provides tools for financial analysis.
+- **QuantConnect:** Utilized for paper trading and visualization of trading algorithms.
+
+## Machine Learning
+- **Scikit-learn (`sklearn`):**
+  - **SVM (Support Vector Machine):** For building and optimizing the trading model.
+  - **StandardScaler:** For feature scaling.
+  - **train_test_split:** To split data into training and testing sets.
+  - **GridSearchCV:** For hyperparameter tuning.
+- **PyTorch:** Advanced machine learning library, used for predictive modeling.
+
+## Miscellaneous
+- **pandas.tseries.offsets (DateOffset):** For manipulating datetime objects.
+- **pathlib (Path):** For filesystem path handling.
+
+
 ---
 # Team Responsibilities Overview
 
