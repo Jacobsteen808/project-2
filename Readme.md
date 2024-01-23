@@ -50,10 +50,7 @@ Welcome to the Trading Risk Profiler, a tool designed to align algorithmic tradi
 - **Profit Factor:** 1.07 (marginal profitability).
 - **Expectancy:** 0.17% (average amount earned per trade).
 - **System Quality Number (SQN):** -0.08, indicating poor system performance.
-
-## Strategy Details
-- _strategy, _equity_curve, and _trades likely refer to specific implementation details, equity curve data, and trade records.
-
+  
 ## Summary
 - The strategy underperformed compared to a simple buy-and-hold approach, resulting in a net loss.
 - High volatility and significant drawdowns suggest high risk.
